@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- utilities class (per build css) -->
+    <style>
+      .text-center {
+        text-align: center;
+      }
+      .text-black {
+        color: rgb(20, 20, 20);
+      }
+      .bg-primary {
+        background-color: blue;
+      }
+      .p-3 {
+        padding: 1rem;
+      }
+      .border-rounded {
+        border-radius: 0.25rem;
+      }
+    </style>
+  </head>
+  <body class="container-md">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Our Cafe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Story</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Login
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    >login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#registerModal"
+                    >register</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">log out</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Modal Login Start -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Login Here</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" px-4>
+              <form action="">
+                <div class="mb-3">
+                  <label for="">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Input your email"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="">Password</label>
+                  <input
+                    type="password"
+                    placeholder="Input your password"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <input type="submit" value="Login" class="btn btn-primary" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Login End -->
+      <!-- Modal Register Start -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="registerModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="registerModalLabel">
+                Register Here
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" px-4>
+              <form action="">
+                <div class="mb-3">
+                  <label for="">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="">Password</label>
+                  <input
+                    type="password"
+                    placeholder="Creat your password"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="">Confirm Password</label>
+                  <input
+                    type="password"
+                    placeholder="Confirm your password"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="">Phone</label>
+                  <input
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="">Address</label>
+                  <textarea
+                    type="text"
+                    placeholder="Enter your address"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="">Photo</label>
+                  <input
+                    type="file"
+                    placeholder="Drop your photo"
+                    class="form-control"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="submit"
+                    value="Creat Account"
+                    class="btn btn-primary"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Register End -->
+    </nav>
+    <!-- <h1 class="text-center fs-1">Hello World</h1>
+    <p class="text-center text-black bg-secondary p-3 rounded-pill">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio
+      aspernatur accusantium quos iste maxime dolorum beatae. Dolores aspernatur
+      ratione sed quibusdam, quod cum, facilis sequi doloribus asperiores alias
+      ut?
+    </p>
+    <div class="row p-5 m-0">
+      <div class="col-12 col-md-6 col-lg-3 py-5 fs-1 bg-primary">col</div>
+      <div class="col-12 col-md-6 col-lg-3 py-5 fs-2 bg-secondary">col</div>
+      <div class="col-12 col-md-6 col-lg-3 py-5 fs-3 bg-success">col</div>
+      <div class="col-12 col-md-6 col-lg-3 py-5 fs-4 bg-danger">col</div>
+    </div> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
